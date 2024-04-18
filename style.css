@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0px;
     padding: 0%;
     font-family: 'Raleway';
@@ -7,56 +7,89 @@ body{
 
 }
 
- .barra{
+.barra {
     margin-right: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-   position: fixed;
-   width: 100%;
-   background: #F5F5F5;
+    position: fixed;
+    width: 100%;
+    background: #F5F5F5;
 
 }
-ul{
+
+ul {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     gap: 15px;
     align-items: center;
     list-style-type: none;
-    
-}
-li{
- 
 
 }
-li a{
+
+li {}
+
+li a {
     text-decoration: none;
     color: #464646;
     font-size: 16px;
 }
-li a:hover{
-    color:chocolate;
+
+li a:hover {
+    color: chocolate;
 }
-#presentacion{
-margin-top: 40px;
-color:#464646;
-width: 80%;
-display: flex;
-box-sizing: border-box;
-margin: auto;
+
+#presentacion {
+    margin-top: 40px;
+    color: #464646;
+    width: 80%;
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
 }
-.informacion_presentacion{
+
+.informacion_presentacion {
     margin-right: 20px;
 }
-.foto-perfil{
+
+.foto-perfil {
     width: 150px;
     border-radius: 50%;
 }
-#sobre_mi, #contacto{
+
+#sobre_mi,
+#contacto {
     background: #EAF2FD;
     padding: 50px 80px;
-    color:#464646;
+    color: #464646;
     margin-top: 20px;
 }
-.informacion_sobre_mi{
+
+.informacion_sobre_mi {
     width: 80%;
+}
+
+.skills,
+.hobbies {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    height: 200px;
+}
+
+.habilidad {}
+
+.icon_skill {
+    width: 60px;
+}
+
+.icon_hobbie {
+    width: 60px;
+}
+
+.formulario {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 }
