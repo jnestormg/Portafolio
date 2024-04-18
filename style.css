@@ -76,7 +76,6 @@ li a:hover {
     height: 200px;
 }
 
-.habilidad {}
 
 .icon_skill {
     width: 60px;
@@ -85,11 +84,68 @@ li a:hover {
 .icon_hobbie {
     width: 60px;
 }
+.proyectos{
+    text-align: center;
+    align-self: center;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
 
 .formulario {
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: center;
+}
+.texto{
+    width: 20%;
+    height: 30px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.mensaje{
+    width: 20%;
+    height: 50px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.boton{
+    width: 150px;
+    height: 40px;
+    background: #2A7AE4;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+}
+.boton_demo{
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    background: #2A7AE4;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+}
+.boton_repositorio{
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid #2A7AE4;
+}
+.boton:hover{
+    background: orange;
+}
+.pie_pagina{
     text-align: center;
 }
