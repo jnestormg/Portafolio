@@ -85,7 +85,8 @@ li a:hover {
 .icon_hobbie {
     width: 60px;
 }
-.proyectos{
+
+.proyectos {
     text-align: center;
     align-self: center;
     display: inline-flex;
@@ -102,21 +103,24 @@ li a:hover {
     gap: 20px;
     text-align: center;
 }
-.texto{
+
+.texto {
     width: 20%;
     height: 30px;
     margin: 15px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.mensaje{
+
+.mensaje {
     width: 20%;
     height: 50px;
     margin: 15px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
-.boton{
+
+.boton {
     width: 150px;
     height: 40px;
     background: #2A7AE4;
@@ -124,7 +128,8 @@ li a:hover {
     color: white;
     border: 0;
 }
-.boton_demo{
+
+.boton_demo {
     text-decoration: none;
     padding: 10px;
     width: 150px;
@@ -134,7 +139,8 @@ li a:hover {
     color: white;
     border: 0;
 }
-.boton_repositorio{
+
+.boton_repositorio {
     text-decoration: none;
     padding: 10px;
     width: 150px;
@@ -144,9 +150,21 @@ li a:hover {
     color: black;
     border: 1px solid #2A7AE4;
 }
-.boton:hover{
+
+.boton:hover {
     background: orange;
 }
-.pie_pagina{
+
+.pie_pagina {
     text-align: center;
+}
+@media (max-width:600px) {
+    .texto{width: 80%;}
+    .mensaje{width: 80%;}
+    .foto-perfil{width: 120px; height: 120px;}
+}
+@media (min-width: 601px) and (max-width:1200px) {
+    .texto{width: 40%;}
+    .mensaje{width: 40%;}
+    .foto-perfil{width: 130px; height: 130px;}
 }
