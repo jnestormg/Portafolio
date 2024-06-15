@@ -77,8 +77,9 @@ li a:hover {
     justify-content: space-around;
     gap: 10px;
     height: 200px;
-    width: auto;
+    width: 100%;
     flex-flow: row wrap;
+    margin: 10px;
 }
 
 
