@@ -2,26 +2,23 @@ body {
     margin: 0px;
     padding: 0%;
     font-family: 'Raleway';
-    width: 100%;
     background: #F5F5F5;
 
 }
 
 .barra {
-    margin-right: 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
     background: #F5F5F5;
-    margin-bottom: 40px;
     overflow: hidden;
+    z-index: 1000;
 
 }
 
 ul {
     display: flex;
-    justify-content: flex-end;
     gap: 15px;
     align-items: center;
     list-style-type: none;
@@ -39,9 +36,14 @@ li a:hover {
     color: chocolate;
 }
 
+.content{
+    padding-top: 60px;
+    padding: 20px;
+}
+
 #presentacion {
     color: #464646;
-    width: 80%;
+    width: 90%;
     display: flex;
     box-sizing: border-box;
     margin: auto;
@@ -62,10 +64,11 @@ li a:hover {
     padding: 50px 80px;
     color: #464646;
     margin-top: 20px;
+    width: 100%;
 }
 
 .informacion_sobre_mi {
-    width: 80%;
+    width: 90%;
 }
 
 .skills,
@@ -75,6 +78,7 @@ li a:hover {
     gap: 10px;
     height: 200px;
     width: auto;
+    flex-flow: row wrap;
 }
 
 
@@ -162,9 +166,12 @@ li a:hover {
     .texto{width: 80%;}
     .mensaje{width: 80%;}
     .foto-perfil{width: 120px; height: 120px;}
+    .boton{width: 50%;}
 }
 @media (min-width: 601px) and (max-width:1200px) {
     .texto{width: 40%;}
     .mensaje{width: 40%;}
+    .boton{width: 40%;}
     .foto-perfil{width: 130px; height: 130px;}
+    .barra{justify-content: center;}
 }
