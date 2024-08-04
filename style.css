@@ -1,3 +1,6 @@
+*{
+box-sizing: border-box;
+}
 body {
     margin: 0px;
     padding: 0%;
@@ -57,6 +60,7 @@ li a:hover {
 .foto-perfil {
     width: 150px;
     border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #sobre_mi,
@@ -74,13 +78,11 @@ li a:hover {
 
 .skills,
 .hobbies {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     gap: 10px;
-    height: 200px;
-    width: 100%;
-    flex-flow: row wrap;
-    margin: 10px;
+
 }
 
 
