@@ -35,7 +35,11 @@ ul {
 li a {
     text-decoration: none;
     color: #464646;
-    font-size: 14px;
+    font-size: 20px;
+}
+
+li a .banner{
+    font-size: 16px;
 }
 
 li a:hover {
@@ -315,6 +319,7 @@ form {
     .texto,
     .mensaje {
         width: 90%;
+        border-bottom: #4e4e4e;
     }
 
     .proyectos {
@@ -356,6 +361,14 @@ form {
     .texto_presentacion{
         text-wrap: pretty;
         
+    }
+    .modal{
+        width:300px;
+        height: 300px;
+       
+    }
+    .img_modal{
+        width: 400px;
     }
 
 }
