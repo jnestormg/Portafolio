@@ -25,15 +25,17 @@
     <main>
 
         <div id="sobre_mi" class="sobre_mi">
-            <div>
-                <h3>Sobre mí</h3>
-                <p>Soy desarrollador de aplicaciones web; apasionado de la programación y el diseño de sitios web.
+            <div class="texto_sobre_mi">
+                <h3 style="color: darkslategrey;">Sobre mí</h3>
+                <p  style="color: darkslategrey;">Soy desarrollador de aplicaciones web; apasionado de la programación y el diseño de sitios web.
                     Tengo habilidades creativas, gusto por aprender constantemente y mucho entusiasmo por
                     seguir creciendo en el área de la tecnología.</p>
             </div>
         </div>
 
-       <div class="titulo"><h2 class="texto_titulo" >Skills</h2></div> 
+        <div class="titulo">
+            <h2 class="texto_titulo">Skills</h2>
+        </div>
         <div id="skills" class="skills">
             <div class="habilidad">
                 <img class="icon_skill" src="img/icono_java.png" title="Java" />
@@ -78,7 +80,9 @@
 
         </div>
 
-        <div class="titulo"><h2 class="texto_titulo" >Hobbies</h2></div> 
+        <div class="titulo">
+            <h2 class="texto_titulo">Hobbies</h2>
+        </div>
         <div id="hobbies" class="hobbies">
             <div class="hobbie">
                 <img class="icon_hobbie" src="img/dibujo.png" title="Dibujar" />
@@ -99,13 +103,15 @@
 
         </div>
         <!--Proyectos-->
-        <div class="titulo"><h2 class="texto_titulo" >Proyectos</h2></div> 
+        <div class="titulo">
+            <h2 class="texto_titulo">Proyectos</h2>
+        </div>
         <div class="proyectos" id="proyectos">
 
             <div class="proyecto">
                 <h4 class="titulo_proyecto">Api Plantas</h4>
                 <figure>
-                    <img class="img_proyecto" src="img/plants.png"  />
+                    <img class="img_proyecto" src="img/plants.png" />
                     <figcaption class="bann">
                         <label class="banner">Spring boot</label>
                         <label class="banner">React</label>
@@ -114,9 +120,14 @@
                         <label class="banner">JPA</label>
                         <label class="banner">Java</label>
                     </figcaption>
+                    <p class="descripcion_proyecto">
+                        Permite almacenar información de una planta,
+                         eliminar y hacer busquedas en toda la colleción existente.  
+                    </p>
                     <footer class="pie_proyecto">
                         <a class="repositorio" href="https://github.com/jnestormg/Plants-Front-End.git">Repositorio</a>
-                        <a class="demo" href="https://plants-front-mtr5vqha9-jnestormgs-projects.vercel.app/">Ver demo</a>
+                        <a class="demo" href="https://plants-front-mtr5vqha9-jnestormgs-projects.vercel.app/">Ver
+                            demo</a>
                     </footer>
                 </figure>
             </div>
@@ -124,12 +135,17 @@
             <div class="proyecto">
                 <h4 class="titulo_proyecto">Encriptador de texto</h4>
                 <figure>
-                    <img class="img_proyecto" src="img/encryptor.png"  />
+                    <img class="img_proyecto" src="img/encryptor.png" />
                     <figcaption class="banners">
                         <label class="banner">JavaScript</label>
                         <label class="banner">HTMl 5</label>
                         <label class="banner">Css 3</label>
                     </figcaption>
+                    <p class="descripcion_proyecto">
+                        Esta aplicación encripta un mensaje sustituyendo vocales
+                         por palabras, de igual forma permite desencriptar
+                         texto.
+                    </p>
                     <footer class="pie_proyecto">
                         <a class="repositorio" href="https://github.com/jnestormg/encryptor.git">Repositorio</a>
                         <a class="demo" href="https://jnestormg.github.io/encryptor/">Ver demo</a>
@@ -142,7 +158,7 @@
 
         <!--Contacto-->
         <div class="contacto" id="contacto">
-            <h2 style="text-align: center;padding: 5px; padding: 20px;">Contacto</h2>
+            <h2 style="text-align: center;padding: 5px; padding: 20px; color: darkslategrey;">Contacto</h2>
             <form action="mailto:nmeneses51@gmail.com" method="get">
                 <label for="email">E-mail</label>
                 <input id="email" class="texto" type="email" name="email">
