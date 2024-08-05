@@ -1,13 +1,14 @@
-*{
-box-sizing: border-box;
-scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
+
 body {
     margin: 0px;
     padding: 0%;
     font-family: 'Raleway';
-    background: #F5F5F5;
+    background: #fcfcfd;
 }
 
 .barra {
@@ -16,15 +17,15 @@ body {
     position: fixed;
     width: 100%;
     top: 0;
-    /*background: #F5F5F5;*/
+    height: 60px;
     background-color: rgba(255, 240, 255, 0.2);
-    overflow: hidden;
     z-index: 1000;
     backdrop-filter: blur(10px);
 }
 
 ul {
     display: flex;
+    justify-content: flex-start;
     gap: 15px;
     align-items: center;
     list-style-type: none;
@@ -35,149 +36,193 @@ ul {
 li a {
     text-decoration: none;
     color: #464646;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 li a:hover {
     color: chocolate;
 }
 
-.content{
-    padding-top: 60px;
+main {
+    margin-top: 70px;
+}
+.titulo{ 
+
     padding: 20px;
-}
-
-#presentacion {
-    color: #464646;
-    width: 90%;
+    width: 95%;
+    margin: 20px;
     display: flex;
-    box-sizing: border-box;
-    margin: auto;
-}
-
-.informacion_presentacion {
-    margin-right: 20px;
-}
-
-.foto-perfil {
-    width: 150px;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-#sobre_mi,
-#contacto {
-    background: #EAF2FD;
-    padding: 50px 80px;
-    color: #464646;
-    margin-top: 20px;
-    width: 100%;
-}
-
-.informacion_sobre_mi {
-    width: 90%;
-}
-
-.skills,
-.hobbies {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    gap: 10px;
-
-}
-
-
-.icon_skill {
-    width: 60px;
-}
-
-.icon_hobbie {
-    width: 60px;
-}
-
-.proyectos {
-    text-align: center;
-    align-self: center;
-    display: inline-flex;
-    flex-direction: row;
-    gap: 20px;
     justify-content: center;
 }
-
-
-.formulario {
-    margin: auto;
+.titulo:not(:first-child){
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.texto_titulo{
+    text-align: center;
+    background: #93bcf5;
+    padding:10px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.sobre_mi {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    word-wrap: break-word;
+    background: #EAF2FD;
+    
+}
+.skills, .hobbies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center; 
+    padding:10px ;
+    margin-bottom: 20px;
+}
+
+.icon_skill, .icon_hobbie {
+    width: 70px;
+}
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 10px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.titulo_proyecto{
     text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 4px;
+    padding: 5px;
+}
+.etiquetas{
+    margin: 10px;
+    
+}
+.banners{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+
+}
+.banner{
+    width: fit-content;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 200, 0.2);
+    font-size: 12px;
+    padding: 3px;
+    background: #EAF2FD;
 }
 
-.texto {
-    width: 20%;
-    height: 30px;
-    margin: 15px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+.pie_proyecto{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) ;
 }
 
-.mensaje {
-    width: 20%;
-    height: 50px;
-    margin: 15px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.boton {
-    width: 150px;
-    height: 40px;
-    background: #2A7AE4;
-    border-radius: 5px;
-    color: white;
-    border: 0;
-}
-
-.boton_demo {
+.demo{
     text-decoration: none;
-    padding: 10px;
-    width: 150px;
-    height: 40px;
-    background: #2A7AE4;
+    background: #659deb;
+    color:white;
+    padding: 5px;
     border-radius: 5px;
-    color: white;
-    border: 0;
+    transition: 1s;
 }
-
-.boton_repositorio {
-    text-decoration: none;
-    padding: 10px;
-    width: 150px;
-    height: 40px;
+.demo:hover{
     background: white;
+    border: 1px solid #83b5fc;
+    color: #464646;
+
+}
+.repositorio{
+    text-decoration: none;
     border-radius: 5px;
-    color: black;
-    border: 1px solid #2A7AE4;
+    border: 1px solid #83b5fc;
+    padding: 5px;
+    color: #464646;
+    transition: 1s;
+}
+.repositorio:hover{
+    background: #83b5fc;
+    color: white;
 }
 
-.boton:hover {
-    background: orange;
+.img_proyecto{
+    width: 310px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contacto{
+    background: #EAF2FD;
+    width: 100%;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    padding: 20px;
+    justify-items: center;
+    gap: 10px;
 }
 
-.pie_pagina {
-    text-align: center;
+.texto, .mensaje{
+    width: 350px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 40px;
+    outline:aqua;
 }
-@media (max-width:600px) {
-    .texto{width: 80%;}
-    .mensaje{width: 80%;}
-    .foto-perfil{width: 120px; height: 120px;}
-    .boton{width: 50%;}
+
+.mensaje{
+    resize: vertical;
+    height: 60px;
 }
-@media (min-width: 601px) and (max-width:1200px) {
-    .texto{width: 40%;}
-    .mensaje{width: 40%;}
-    .boton{width: 40%;}
-    .foto-perfil{width: 150px; height: 150px;}
-    .barra{justify-content: center;}
+.boton{
+    width: 350px;
+    padding: 10px;
+    color: white;
+    background: #659deb;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.boton:hover{
+    border: 1px solid blue;
+    background: white;
+    color: #464646;
+}
+.pie_pagina{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background: #646464;
+    color: white;
+}
+
+
+@media (min-width:320px) and (max-width:600px) {
+    .texto, .mensaje{width: 90%;}
+    .proyectos{grid-template-columns: repeat(1, 1fr);  padding: 4px;}
+    .proyecto{width: 90%;}
+    .img_proyecto{width: 100%;}
 }

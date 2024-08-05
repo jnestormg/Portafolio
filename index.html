@@ -22,45 +22,19 @@
             </ul>
         </nav>
     </header>
-        <br><br><br>
-        <div class="content">
-        <section id="presentacion">
-            <div class="informacion_presentacion">
-                <h2>Hola, mi nombre es Néstor Meneses</h2>
-                <h4>
-                    Soy licenciado en informática graduado del Tecnológico Nacional de México y actualmente
-                    estoy participando en el proyecto de Oracle Next Education. 
-                </h4>
-                <ul>
-                    <li><a href="https://github.com/jnestormg">Github <img src="img/arrow.png" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/jos%C3%A9-n%C3%A9stor-meneses-garc%C3%ADa-7a0a11a4/">Linkedin
-                            <img src="img/arrow.png" /></a></li>
-                    <li><a href="https://drive.google.com/file/d/1MAQEuFmqCIf21HQm_Y7GCIOjglo_gtpy/view?usp=drive_link">Curriculum
-                            <img src="img/arrow.png" /></a></li>
+    <main>
 
-                </ul>
+        <div id="sobre_mi" class="sobre_mi">
+            <div>
+                <h3>Sobre mí</h3>
+                <p>Soy desarrollador de aplicaciones web; apasionado de la programación y el diseño de sitios web.
+                    Tengo habilidades creativas, gusto por aprender constantemente y mucho entusiasmo por
+                    seguir creciendo en el área de la tecnología.</p>
             </div>
+        </div>
 
-            <img class="foto-perfil" src="img/perfil.jpg" title="foto-perfil" />
-        </section>
-
-        <section id="sobre_mi">
-            <div class="informacion_sobre_mi">
-                <h3>
-                    Sobre mí
-                </h3>
-                <p>
-                    Soy desarrollador de aplicaciones web; apasionado de la programación y el diseño de sitios web.
-                    Tengo habilidades creativas, gusto por aprender constantemente y mucho entusiasmo por seguir 
-                    creciendo en el área de la tecnología.
-                </p>
-            </div>
-        </section>
-
-        <div id="skills">
-        <h3 style="text-align: center;">Skills</h3>
-
-        <section  class="skills">
+       <div class="titulo"><h2 class="texto_titulo" >Skills</h2></div> 
+        <div id="skills" class="skills">
             <div class="habilidad">
                 <img class="icon_skill" src="img/icono_java.png" title="Java" />
                 <p class="descripcion">Java</p>
@@ -101,70 +75,92 @@
                 <img class="icon_skill" src="img/JPApng.png" title="Java Persistence API" />
                 <p class="descripcion">JPA</p>
             </div>
-        </section>
-    </div>
 
-        <h3 style="text-align: center; margin-top: 40px ;">Hobbies</h3>
+        </div>
 
-        <section id="hobbies" class="hobbies">
-
+        <div class="titulo"><h2 class="texto_titulo" >Hobbies</h2></div> 
+        <div id="hobbies" class="hobbies">
             <div class="hobbie">
-                <img class="icon_hobbie" src="img/dibujo.png" title="mysql" />
+                <img class="icon_hobbie" src="img/dibujo.png" title="Dibujar" />
                 <p class="descripcion">Dibujo</p>
             </div>
             <div class="hobbie">
-                <img class="icon_hobbie" src="img/deportes.png" title="mysql" />
+                <img class="icon_hobbie" src="img/deportes.png" title="Deportes" />
                 <p class="descripcion">Deportes</p>
             </div>
             <div class="hobbie">
-                <img class="icon_hobbie" src="img/musica.png" title="mysql" />
+                <img class="icon_hobbie" src="img/musica.png" title="Escuchar música" />
                 <p class="descripcion">Música</p>
             </div>
             <div class="hobbie">
-                <img class="icon_hobbie" src="img/2e06d24fcdac4333507da09ef7f8a60a.jpg" title="mysql" />
+                <img class="icon_hobbie" src="img/2e06d24fcdac4333507da09ef7f8a60a.jpg" title="Escribir" />
                 <p class="descripcion">Escritura</p>
             </div>
-        </section>
 
-        <h3 style="text-align: center;">Proyectos</h3>
+        </div>
+        <!--Proyectos-->
+        <div class="titulo"><h2 class="texto_titulo" >Proyectos</h2></div> 
+        <div class="proyectos" id="proyectos">
 
-        <section id="proyectos" class="proyectos">
-            <div class="img_proyecto">
-                <img src="img/encriptador.png" width="40%" />
-            <div>
             <div class="proyecto">
-                <h3>Encriptador de texto</h3>
-                <a href="https://github.com/jnestormg/encryptor" class="boton_repositorio">Repositorio</a>
-                <a href="https://jnestormg.github.io/encryptor/" class="boton_demo">Ver Demo</a>
-
+                <h4 class="titulo_proyecto">Api Plantas</h4>
+                <figure>
+                    <img class="img_proyecto" src="img/plants.png"  />
+                    <figcaption class="etiquetas">
+                        <label class="banner">Spring boot</label>
+                        <label class="banner">React</label>
+                        <label class="banner">Mysql</label>
+                        <label class="banner">JavaScript</label>
+                        <label class="banner">JPA</label>
+                        <label class="banner">Java</label>
+                    </figcaption>
+                    <footer class="pie_proyecto">
+                        <a class="repositorio" href="https://github.com/jnestormg/Plants-Front-End.git">Repositorio</a>
+                        <a class="demo" href="https://plants-front-mtr5vqha9-jnestormgs-projects.vercel.app/">Ver demo</a>
+                    </footer>
+                </figure>
             </div>
-        </section>
 
-        <section id="contacto">
-            <div class="formulario">
-                <h3>Contacto</h3>
-                <form action="mailto:nmeneses51@gmail.com" method="get">
-                    <div class="entrada">
-                        <label for="email">E-mail</label>
-                        <input id="email" class="texto" type="email" name="email">
-                    </div>
-                    <div class="entrada">
-                        <label for="subject">Asunto</label>
-                        <input id="subject" class="texto" type="text" name="subject">
-                    </div>
-                    <div class="entrada">
-                        <label for="inputMessage">Mensaje</label>
-                        <textarea class="mensaje" id="inputMessage" rows="4" name="body"></textarea>
-                    </div>
-                    <input class="boton" type="submit" value="Enviar">
-                </form>
+            <div class="proyecto">
+                <h4 class="titulo_proyecto">Encriptador de texto</h4>
+                <figure>
+                    <img class="img_proyecto" src="img/encryptor.png"  />
+                    <figcaption class="banners">
+                        <label class="banner">JavaScript</label>
+                        <label class="banner">HTMl 5</label>
+                        <label class="banner">Css 3</label>
+                    </figcaption>
+                    <footer class="pie_proyecto">
+                        <a class="repositorio" href="https://github.com/jnestormg/encryptor.git">Repositorio</a>
+                        <a class="demo" href="https://jnestormg.github.io/encryptor/">Ver demo</a>
+                    </footer>
+                </figure>
             </div>
-        </section>
-    </div>
+
+        </div>
+
+
+        <!--Contacto-->
+        <div class="contacto" id="contacto">
+            <h2 style="text-align: center;padding: 5px; padding: 20px;">Contacto</h2>
+            <form action="mailto:nmeneses51@gmail.com" method="get">
+                <label for="email">E-mail</label>
+                <input id="email" class="texto" type="email" name="email">
+                <label for="subject">Asunto</label>
+                <input id="subject" class="texto" type="text" name="subject">
+                <label for="inputMessage">Mensaje</label>
+                <textarea class="mensaje" id="inputMessage" rows="10" name="body"></textarea>
+                <input class="boton" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
+
+    </main>
 
     <footer class="pie_pagina">
         <h5>Desarrollado por Néstor Meneses</h5>
-        <h6>2024</h6>
     </footer>
 
 </body>
