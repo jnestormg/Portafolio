@@ -277,7 +277,7 @@ form {
     border-radius: 7px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 40px;
-    outline: aqua;
+    outline:1px solid aqua;
 }
 
 .mensaje {
@@ -362,13 +362,6 @@ form {
         text-wrap: pretty;
         
     }
-    .modal{
-        width:300px;
-        height: 300px;
-       
-    }
-    .img_modal{
-        width: 400px;
-    }
+   
 
 }
