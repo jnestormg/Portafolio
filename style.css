@@ -54,8 +54,24 @@ main {
     animation: desglose linear;
     animation-timeline: view();
     /**/
-    animation-range: entry 30% cover 40%;
+    animation-range: entry 20% cover 30%;
     animation-fill-mode: both;
+}
+
+.relative{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    top: 200px;
+    background-color: aqua;
+}
+
+.fixed{
+    position: fixed;
+    width: 200px;
+    height: 300px;
+    background: #464646;
+    top: 200px;
 }
 
 @keyframes desglose {
@@ -210,6 +226,7 @@ main {
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin: 4px;
+    font-weight: 200px;
     padding: 5px;
 }
 
@@ -225,20 +242,27 @@ main {
 }
 
 .banners {
-    display: flex;
-    flex-direction: row;
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
     gap: 5px;
-    padding: 3px 5px;
 
 }
 
 .banner {
-    width: fit-content;
+    width: 85px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 200, 0.2);
     font-size: 12px;
-    padding: 3px;
+    padding: 2px 2px;
     background: #EAF2FD;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .pie_proyecto {
