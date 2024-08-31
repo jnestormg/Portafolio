@@ -215,6 +215,7 @@ main {
 
 .proyecto {
     display: flex;
+    background-color: white;
     flex-direction: column;
     justify-items: center;
     border: 1px solid rgba(0, 0, 0, 0.2);
