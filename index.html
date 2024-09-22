@@ -113,6 +113,10 @@
                 <img class="icon_skill" src="img/JPApng.png" title="Java Persistence API" />
                 <p class="descripcion">JPA</p>
             </div>
+            <div class="habilidad">
+                <img class="icon_skill" src="img/docker.png" title="Docker" />
+                <p class="descripcion">Docker</p>
+            </div>
 
         </div>
 
@@ -221,17 +225,17 @@
 
         </div>
        
-
         <!--Contacto-->
         <div class="contacto" id="contacto">
             <h2 style="text-align: center;padding: 5px; padding: 20px; color: darkslategrey;">Contacto</h2>
-            <form action="mailto:nmeneses51@gmail.com" method="get">
+           
+            <form onsubmit="sendMail(this); return false;">
                 <label for="email">E-mail</label>
                 <input id="email" class="texto" type="email" name="email">
                 <label for="subject">Asunto</label>
                 <input id="subject" class="texto" type="text" name="subject">
                 <label for="inputMessage">Mensaje</label>
-                <textarea class="mensaje" id="inputMessage" rows="10" name="body"></textarea>
+                <textarea class="mensaje"  id="body" rows="10" name="body"></textarea>
                 <input class="boton" type="submit" value="Enviar">
 
             </form>
