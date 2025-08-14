@@ -1,277 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Portafolio</title>
+    <title>Para Ti ❤️</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <nav class="barra">
-            <ul>
-                <li><a href="#sobre_mi">Sobre mí</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <!-- Pantalla inicial -->
+    <div class="overlay" id="pantallaInicio">
+        <h1>Hola, Arlen mi niña hermosa 💌</h1>
+        <p>
+            Desde que empece a platicar contigo me siento muy emocionado por tener la oportunidad de conocerte personalmente y poder abrazarte.
+        </p>
+        <button id="btnDescubrir">Haz clic para saber más 💖</button>
+    </div>
 
-        <div class="container_info">
+    <!-- Pantalla de declaración -->
+    <div class="mensaje" id="pantallaMensaje">
+        <h2>Eres mi inspiración ✨</h2>
+        <p>
+            Adoro esa forma de tratar conmigo, esa dulce forma de platicar conmigo, esos ojos tan lindos y tu carita hermosa, esa amabilidad tan atenta y que seas tan linda. Haces que todo sea más lindo. 
+            Me encantaría seguir compartiendo momentos contigo.
+        </p>
+        <button class="btn-si" onclick="enviarWhatsApp()">Sí 💕</button>
+        <button class="btn-no" onmouseover="moverBoton(this)">No 😅</button>
+    </div>
 
-    
+    <script>
+        const btnDescubrir = document.getElementById('btnDescubrir');
+        const pantallaInicio = document.getElementById('pantallaInicio');
+        const pantallaMensaje = document.getElementById('pantallaMensaje');
 
-            <div class="informacion">
-                <div class="foto">
-                    <img class="foto_perfil" src="img/perfil.jpg" title="foto-perfil" />
-                </div>
-                <div class="presentacion">
-                    <h2 class="texto_name">Hola, mi nombre es Néstor Meneses</h2>
-                    <h4 class="texto_presentacion">
-                        Soy licenciado en informática graduado del Tecnológico Nacional de México y actualmente
-                        estoy participando en el proyecto de Oracle Next Education.
-                    </h4>
-                    <ul>
-                        <li ><a class="banner" href="https://github.com/jnestormg">Github <img src="img/arrow.png" /></a>
-                        </li>
-                        <li><a class="banner"
-                                href="https://www.linkedin.com/in/jos%C3%A9-n%C3%A9stor-meneses-garc%C3%ADa-7a0a11a4/">Linkedin
-                                <img src="img/arrow.png" /></a></li>
-                        <li><a class="banner"
-                                href="https://drive.google.com/file/d/1MAQEuFmqCIf21HQm_Y7GCIOjglo_gtpy/view?usp=drive_link">Curriculum
-                                <img src="img/arrow.png" /></a></li>
-                                <li><a class="banner" style="width: 220px !important;"
-                                    href="https://app.aluracursos.com/program/certificate/52a79581-29b0-4b38-ba79-328ac59bd622?lang">Certificado Oracle Next Education
-                                    <img src="img/arrow.png" /></a></li>
+        btnDescubrir.addEventListener('click', () => {
+            pantallaInicio.style.display = 'none';
+            pantallaMensaje.style.display = 'block';
+        });
 
-                    </ul>
-                </div>
-            </div>
+        function moverBoton(boton) {
+            const x = Math.floor(Math.random() * 200) - 100;
+            const y = Math.floor(Math.random() * 200) - 100;
+            boton.style.transform = `translate(${x}px, ${y}px)`;
+        }
 
-
-        </div>
-
-        <div id="sobre_mi" class="sobre_mi">
-            <div class="texto_sobre_mi">
-                <h3 style="color: darkslategrey;">Sobre mí</h3>
-                <p style="color: darkslategrey;">
-                    Soy desarrollador de aplicaciones web, apasionado de la programación y
-                    el diseño de sitios web.
-                    Poseo habilidades creativas y entusiasmo por
-                    seguir creciendo en el área de la tecnología.</p>
-            </div>
-        </div>
-
-        <div class="titulo ">
-            <h2 class="texto_titulo">Skills</h2>
-        </div>
-        <div id="skills" class="skills area">
-            <div class="habilidad">
-                <img class="icon_skill" src="img/icono_java.png" title="Java" />
-                <p class="descripcion">Java</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/icono_html.png" title="html" />
-                <p class="descripcion">Html</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/icono_css.png" title="css" />
-                <p class="descripcion">Css</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/icono_javascript.png" title="javscript" />
-                <p class="descripcion">Javacript</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/react.png" title="React" />
-                <p class="descripcion">React</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/icono_mysql.png" title="mysql" />
-                <p class="descripcion">Mysql</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/spring-boot-ok.png" title="Spring boot" />
-                <p class="descripcion">Spring Boot</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/git_logo.png" title="Git" />
-                <p class="descripcion">Git</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/primefaces.jpg" title="Primefaces" />
-                <p class="descripcion">Primefaces</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/JPApng.png" title="Java Persistence API" />
-                <p class="descripcion">JPA</p>
-            </div>
-            <div class="habilidad">
-                <img class="icon_skill" src="img/docker.png" title="Docker" />
-                <p class="descripcion">Docker</p>
-            </div>
-
-        </div>
-
-        <div class="titulo">
-            <h2 class="texto_titulo area">Hobbies</h2>
-        </div>
-        <div id="hobbies" class="hobbies area">
-            <div class="hobbie">
-                <img class="icon_hobbie" src="img/dibujo.png" title="Dibujar" />
-                <p class="descripcion">Dibujo</p>
-            </div>
-            <div class="hobbie">
-                <img class="icon_hobbie" src="img/deportes.png" title="Deportes" />
-                <p class="descripcion">Deportes</p>
-            </div>
-            <div class="hobbie">
-                <img class="icon_hobbie" src="img/musica.png" title="Escuchar música" />
-                <p class="descripcion">Música</p>
-            </div>
-            <div class="hobbie">
-                <img class="icon_hobbie" src="img/2e06d24fcdac4333507da09ef7f8a60a.jpg" title="Escribir" />
-                <p class="descripcion">Escritura</p>
-            </div>
-
-        </div>
-        <!--Proyectos-->
-        <div class="titulo area">
-            <h2 class="texto_titulo">Proyectos</h2>
-        </div>
-        <div class="proyectos area" id="proyectos">
-
-            <div class="proyecto area">
-                <h4 class="titulo_proyecto">API Plantas</h4>
-                <figure>
-                    <img class="img_proyecto" src="img/plantasapi.png" />
-                    <figcaption class="banners">
-                        <label class="banner">Spring boot</label>
-                        <label class="banner">React</label>
-                        <label class="banner">Mysql</label>
-                        <label class="banner">JavaScript</label>
-                        <label class="banner">JPA</label>
-                        <label class="banner">Java</label>
-                        <label class="banner">Html</label>
-                        <label class="banner">Css</label>
-                    </figcaption>
-                    <p class="descripcion_proyecto">
-                        Permite almacenar información de la flora,
-                        eliminar y hacer búsquedas en toda la colección existente.</br>
-                        <strong>Nota:</strong>  La demo puede tardar un poco en cargar la información al inicio.
-                    </p>
-                    <footer class="pie_proyecto">
-                        <a class="repositorio" href="https://github.com/jnestormg/plants.git">Back-End</a>
-                        <a class="repositorio" href="https://github.com/jnestormg/Plants-Front-End.git">Front-End</a>
-                        <a class="demo" href="https://plants-front-end-git-main-jnestormgs-projects.vercel.app/">Ver
-                            demo</a>
-                    </footer>
-                </figure>
-            </div>
-
-            <div class="proyecto area">
-                <h4 class="titulo_proyecto">Inventarios</h4>
-                <figure>
-                    <img class="img_proyecto" src="img/inventarios.png" />
-                    <figcaption class="banners">
-                        <label class="banner">Spring boot</label>
-                        <label class="banner">Java</label>
-                        <label class="banner">JPA</label>
-                        <label class="banner">JoinFaces</label>
-                        <label class="banner">Primefaces</label>
-                        <label class="banner">Mysql</label>
-                        <label class="banner">Html</label>
-                        <label class="banner">Css </label>
-                    </figcaption>
-                    <p class="descripcion_proyecto">
-                        Permite administrar las compras y las ventas 
-                        de los productos, además de alertar sobre su existencia 
-                        y graficar los productos más vendidos. 
-                    </p>
-                    <footer class="pie_proyecto">
-                        <a class="repositorio" href="https://github.com/jnestormg/Recuento.git">Repositorio</a>
-
-                    </footer>
-                </figure>
-            </div>
-            <div class="proyecto area">
-                <h4 class="titulo_proyecto">Venta de Productos</h4>
-                <figure>
-                    <img class="img_proyecto" src="img/shop.png" />
-                    <figcaption class="banners">
-                        <label class="banner">JavaScript</label>
-                        <label class="banner">HTMl 5</label>
-                        <label class="banner">Tailwind</label>
-                        <label class="banner">React js</label>
-                        <label class="banner">Typescript</label>
-
-                    </figcaption>
-                    <p class="descripcion_proyecto">
-                        Esta aplicación permite realizar compras de productos a través de un menú
-                        y calcular el costo subtotal y total de la venta.
-                    </p>
-                    <footer class="pie_proyecto">
-                        <a class="repositorio" href="https://github.com/jnestormg/CalculadoraProductos.git">Repositorio</a>
-                        <a class="demo" href="https://chipper-taffy-251005.netlify.app/">Ver demo</a>
-                    </footer>
-                </figure>
-            </div>
-
-            <div class="proyecto area">
-                <h4 class="titulo_proyecto">Encriptador de Texto</h4>
-                <figure>
-                    <img class="img_proyecto" src="img/plants-final.png" />
-                    <figcaption class="banners">
-                        <label class="banner">JavaScript</label>
-                        <label class="banner">HTMl 5</label>
-                        <label class="banner">Css 3</label>
-                    </figcaption>
-                    <p class="descripcion_proyecto">
-                        Esta aplicación encripta un mensaje sustituyendo vocales
-                        por palabras, de igual forma permite desencriptar
-                        texto.
-                    </p>
-                    <footer class="pie_proyecto">
-                        <a class="repositorio" href="https://github.com/jnestormg/encryptor.git">Repositorio</a>
-                        <a class="demo" href="https://jnestormg.github.io/encryptor/">Ver demo</a>
-                    </footer>
-                </figure>
-            </div>
-
-        </div>
-       
-        <!--Contacto-->
-        <div class="contacto" id="contacto">
-            <h2 style="text-align: center;padding: 5px; padding: 20px; color: darkslategrey;">Contacto</h2>
-           
-            <form onsubmit="sendMail(this); return false;">
-                <label for="email">E-mail</label>
-                <input id="email" class="texto" type="email" name="email">
-                <label for="subject">Asunto</label>
-                <input id="subject" class="texto" type="text" name="subject">
-                <label for="inputMessage">Mensaje</label>
-                <textarea class="mensaje"  id="body" rows="10" name="body"></textarea>
-                <input class="boton" type="submit" value="Enviar">
-
-            </form>
-
-        </div>
-      
-
-    </main>
-
-    <footer class="pie_pagina">
-        <h5>Desarrollado por Néstor Meneses</h5>
-    </footer>
-    <script src="script.js"></script>
-   
+        function enviarWhatsApp() {
+            let numero = "5215555555555"; // <-- Cambia a tu número en formato internacional
+            let mensaje = "¡Hola! 💕 Quiero decirte que sí, me encantaría 💖";
+            let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, "_blank");
+        }
+    </script>
 </body>
-
 </html>
